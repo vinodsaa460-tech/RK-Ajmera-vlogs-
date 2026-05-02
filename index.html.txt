@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RK Ajmera Vlogs | रामस्वरूप</title>
+    <style>
+        :root { --primary: #ff0000; --accent: #ffd700; --dark: #121212; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: var(--dark); color: white; }
+        
+        /* Hero Section */
+        header { 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=80');
+            height: 80vh; background-size: cover; background-position: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+        }
+        .logo-text { font-size: 4rem; font-weight: 900; margin: 0; text-transform: uppercase; letter-spacing: -2px; }
+        .logo-text span { color: var(--primary); }
+        .vlog-tagline { font-size: 1.5rem; color: var(--accent); margin-bottom: 20px; }
+
+        .container { max-width: 1200px; margin: auto; padding: 40px 20px; }
+
+        /* Video Section */
+        .section-title { font-size: 2.5rem; text-align: center; margin-bottom: 40px; }
+        .vlog-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; }
+        .vlog-card { background: #1e1e1e; border-radius: 15px; overflow: hidden; transition: transform 0.3s; }
+        .vlog-card:hover { transform: translateY(-10px); }
+        .video-box { position: relative; padding-bottom: 56.25%; height: 0; }
+        .video-box iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+        .vlog-info { padding: 20px; text-align: center; }
+
+        /* Buttons */
+        .btn { 
+            background: var(--primary); color: white; padding: 15px 40px; 
+            text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.1rem;
+            transition: 0.3s; display: inline-block;
+        }
+        .btn:hover { background: white; color: var(--primary); }
+
+        footer { text-align: center; padding: 40px; border-top: 1px solid #333; font-size: 0.9rem; color: #888; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="logo-text">RK <span>Ajmera</span> Vlogs</h1>
+        <p class="vlog-tagline">मेरी दुनिया, मेरी नज़रों से</p>
+        <a href="यहाँ-अपने-चैनल-का-लिंक-डालें" class="btn">YouTube पर सब्सक्राइब करें</a>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">मेरे लेटेस्ट व्लॉग्स (Latest Vlogs)</h2>
+        
+        <div class="vlog-container">
+            <div class="vlog-card">
+                <div class="video-box">
+                    <iframe src="https://www.youtube.com/embed/यहाँ-वीडियो-ID" allowfullscreen></iframe>
+                </div>
+                <div class="vlog-info"><h3>आज का दिन बहुत खास था!</h3></div>
+            </div>
+
+            <div class="vlog-card">
+                <div class="video-box">
+                    <iframe src="https://www.youtube.com/embed/यहाँ-वीडियो-ID" allowfullscreen></iframe>
+                </div>
+                <div class="vlog-info"><h3>नई जगह की यात्रा 🚗</h3></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 RK Ajmera Vlogs | रामस्वरूप द्वारा निर्मित</p>
+    </footer>
+
+</body>
+</html>
